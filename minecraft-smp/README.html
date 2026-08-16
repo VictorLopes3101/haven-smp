@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr"><head><title>README</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Haven SMP"/><meta property="og:title" content="README"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="README"/><meta name="twitter:description" content="⚔️ Haven SMP — Servidor Minecraft Vanilla+ Crossplay IP Java: crafty.inovati.cloud | Porta Bedrock: 19132 Versão: 1.21.8 (Minecraft 26.2) | Servidor: Purpur 26.2 Servidor survival Vanilla+ com crossplay entre Java e Bedrock."/><meta property="og:description" content="⚔️ Haven SMP — Servidor Minecraft Vanilla+ Crossplay IP Java: crafty.inovati.cloud | Porta Bedrock: 19132 Versão: 1.21.8 (Minecraft 26.2) | Servidor: Purpur 26.2 Servidor survival Vanilla+ com crossplay entre Java e Bedrock."/><meta property="og:image:alt" content="⚔️ Haven SMP — Servidor Minecraft Vanilla+ Crossplay IP Java: crafty.inovati.cloud | Porta Bedrock: 19132 Versão: 1.21.8 (Minecraft 26.2) | Servidor: Purpur 26.2 Servidor survival Vanilla+ com crossplay entre Java e Bedrock."/><meta property="twitter:domain" content="victorlopes3101.github.io/haven-smp"/><meta property="og:url" content="https://victorlopes3101.github.io/haven-smp/minecraft-smp/README"/><meta property="twitter:url" content="https://victorlopes3101.github.io/haven-smp/minecraft-smp/README"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="⚔️ Haven SMP — Servidor Minecraft Vanilla+ Crossplay IP Java: crafty.inovati.cloud | Porta Bedrock: 19132 Versão: 1.21.8 (Minecraft 26.2) | Servidor: Purpur 26.2 Servidor survival Vanilla+ com crossplay entre Java e Bedrock."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiQzpcXFVzZXJzXFxWaWN0b3IgTG9wZXNcXERvY3VtZW50c1xcR2l0SHViXFxoYXZlbi1zbXBcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://victorlopes3101.github.io/haven-smp/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://victorlopes3101.github.io/haven-smp/minecraft-smp/README-og-image.webp"/><meta property="og:image:url" content="https://victorlopes3101.github.io/haven-smp/minecraft-smp/README-og-image.webp"/><meta name="twitter:image" content="https://victorlopes3101.github.io/haven-smp/minecraft-smp/README-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="minecraft-smp/README"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Haven SMP</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Pesquisar</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Pesquisar por algo" placeholder="Pesquisar por algo"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Tema escuro"><title>Tema escuro</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Tema claro"><title>Tema claro</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Modo leitor"><title>Modo leitor</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorador</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../minecraft-smp/">Haven SMP — Guias</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>README</a></div></nav><h1 class="article-title">README</h1><p show-comma="true" class="content-meta"><time datetime="2026-07-23T03:00:00.000Z">23 de jul. de 2026</time><span>Leitura de 14 min</span></p><ul class="tags"><li><a href="../tags/minecraft" class="internal tag-link">minecraft</a></li><li><a href="../tags/haven-smp" class="internal tag-link">haven-smp</a></li><li><a href="../tags/server" class="internal tag-link">server</a></li><li><a href="../tags/readme" class="internal tag-link">readme</a></li></ul></div></div><article class="popover-hint"><h1 id="️-haven-smp--servidor-minecraft-vanilla-crossplay">⚔️ Haven SMP — Servidor Minecraft Vanilla+ Crossplay<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-haven-smp--servidor-minecraft-vanilla-crossplay" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p><strong>IP Java:</strong> <code>crafty.inovati.cloud</code> | <strong>Porta Bedrock:</strong> <code>19132</code>
+<strong>Versão:</strong> 1.21.8 (Minecraft 26.2) | <strong>Servidor:</strong> Purpur 26.2</p>
+</blockquote>
+<p>Servidor survival Vanilla+ com crossplay entre Java e Bedrock. Sem mods obrigatórios no servidor — tudo que você precisa está nos plugins. O servidor foca em manter a essência vanilla enquanto adiciona qualidade de vida, economia, RPG e uma pitada de aleatoriedade com cervejas e encantamentos custom.</p>
+<hr/>
+<h2 id="-como-entrar">🔗 Como Entrar<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-como-entrar" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="java-edition">Java Edition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#java-edition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Abra o Minecraft Java (qualquer launcher, offline funciona)</li>
+<li>Adicione o servidor: <strong><code>crafty.inovati.cloud</code></strong></li>
+<li>Entre!</li>
+</ol>
+<h3 id="bedrock-edition-console-celular-pc">Bedrock Edition (Console, Celular, PC)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bedrock-edition-console-celular-pc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Vá em Servidores → Adicionar</li>
+<li>IP: <strong><code>crafty.inovati.cloud</code></strong></li>
+<li>Porta: <strong><code>19132</code></strong></li>
+<li>Entre com sua conta Xbox normalmente</li>
+</ol>
+<h3 id="-primeira-vez-linke-suas-contas">🔄 Primeira Vez? Linke Suas Contas!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-primeira-vez-linke-suas-contas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Se você joga tanto no Java quanto no Bedrock e quer <strong>compartilhar o mesmo personagem</strong> (inventário, posição, skills):</p>
+<ol>
+<li>Entre pelo <strong>Java</strong> com seu nick</li>
+<li>Digite no chat: <code>/linkaccount SeuNickNoBedrock</code> <em>(ex: <code>/linkaccount VictorLopes3101</code>)</em></li>
+<li>Anote o <strong>código</strong> que aparecer (ex: <code>0298</code>)</li>
+<li>Entre pelo <strong>Bedrock</strong> com seu nick</li>
+<li>Digite: <code>/linkaccount SeuNickJava CÓDIGO</code> <em>(ex: <code>/linkaccount RopesuDesu 0298</code>)</em></li>
+<li>Saia e entre de novo — <strong>pronto!</strong> Agora Java e Bedrock são o mesmo personagem.</li>
+</ol>
+<blockquote>
+<p>⚠️ Se você joga só em uma plataforma, ignore essa parte. O link é opcional.</p>
+</blockquote>
+<hr/>
+<h2 id="-economia">💰 Economia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-economia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Moeda: <strong>R$</strong> (Real)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Como Ganhar</th><th>Como Gastar</th></tr></thead><tbody><tr><td><code>/sell hand</code> — vender item da mão</td><td><code>/home</code> — R$10</td></tr><tr><td><code>/sell all</code> — vender todo inventário</td><td><code>/sethome</code> — R$25</td></tr><tr><td>Criar loja com <code>/qs create</code></td><td><code>/tpa</code> — R$25</td></tr><tr><td>Minerar, farmar, pescar…</td><td><code>/tprandom</code> — R$2.000</td></tr><tr><td>Upar skills (R$ por level)</td><td><code>/back</code> — R$500</td></tr><tr><td></td><td><code>/enderchest</code> — R$100</td></tr><tr><td></td><td></td></tr></tbody></table></div>
+<p><strong>Saldo inicial:</strong> R$300</p>
+<p><strong>Preços do <code>/sell</code>:</strong> Digite <code>/worth &lt;item></code> no jogo para ver o preço de qualquer item.</p>
+<blockquote>
+<p>💲 <strong>Tabela completa</strong>: <a href="../minecraft-smp/worth" class="internal alias" data-slug="minecraft-smp/worth">sell</a> — diamante R<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">100</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.02778em;">er</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>1.000, todos os itens por categoria</p>
+</blockquote>
+<blockquote>
+<p>💰 <strong>Saber mais</strong>: <a href="../minecraft-smp/economy" class="internal alias" data-slug="minecraft-smp/economy">Guia completo de Economia</a> — todos os comandos e custos
+🏪 <strong>Saber mais</strong>: <a href="../minecraft-smp/shops" class="internal alias" data-slug="minecraft-smp/shops">Guia de Lojas e Economia</a> — como criar loja, top itens pra vender, estratégias pra ficar rico</p>
+</blockquote>
+<hr/>
+<h2 id="-comandos">📜 Comandos<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-comandos" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="todo-jogador">Todo Jogador<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#todo-jogador" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Comando</th><th>Custo</th><th>Faz</th></tr></thead><tbody><tr><td><code>/sethome &lt;nome></code></td><td>R$25</td><td>Salva local como casa (máx 3)</td></tr><tr><td><code>/home &lt;nome></code></td><td>R$10</td><td>Teleporta pra casa salva</td></tr><tr><td><code>/spawn</code></td><td>Grátis</td><td>Vai pro spawn</td></tr><tr><td><code>/tpa &lt;jogador></code></td><td>R$25</td><td>Pede pra teleportar até alguém</td></tr><tr><td><code>/tpaccept</code></td><td>Grátis</td><td>Aceita pedido de teleporte</td></tr><tr><td><code>/tpdeny</code></td><td>Grátis</td><td>Recusa pedido</td></tr><tr><td><code>/tprandom</code></td><td>R$2.000</td><td>Teleporte aleatório (500-10.000 blocos)</td></tr><tr><td><code>/back</code></td><td>R$500</td><td>Volta ao último lugar</td></tr><tr><td><code>/bal</code></td><td>Grátis</td><td>Saldo</td></tr><tr><td><code>/baltop</code></td><td>Grátis</td><td>Ranking dos mais ricos</td></tr><tr><td><code>/pay &lt;nome> &lt;valor></code></td><td>Grátis</td><td>Enviar dinheiro</td></tr><tr><td><code>/enderchest</code></td><td>R$100</td><td>Baú do fim portátil (27 slots)</td></tr><tr><td><code>/sell hand</code></td><td>Grátis</td><td>Vender item da mão</td></tr><tr><td><code>/sell all</code></td><td>Grátis</td><td>Vender tudo do inventário</td></tr><tr><td><code>/msg &lt;jogador></code></td><td>Grátis</td><td>Mensagem privada</td></tr><tr><td><code>/rules</code></td><td>Grátis</td><td>Guia do servidor</td></tr><tr><td><code>/skin &lt;nome></code></td><td>Grátis</td><td>Trocar skin</td></tr><tr><td><code>/skills</code></td><td>Grátis</td><td>Suas habilidades RPG</td></tr><tr><td><code>/stats</code></td><td>Grátis</td><td>Seus atributos</td></tr></tbody></table></div>
+<hr/>
+<h2 id="️-proteção-de-terreno-griefprevention">🛡️ Proteção de Terreno (GriefPrevention)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-proteção-de-terreno-griefprevention" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Proteja suas construções com claims!</p>
+<ol>
+<li>Pegue uma <strong>Pá de Ouro</strong> (craft: 2 gravetos + 1 ouro)</li>
+<li>Clique com botão direito em um canto do terreno</li>
+<li>Clique no canto oposto</li>
+<li>Pronto! Só você constroi e quebra ali.</li>
+</ol>
+<p><strong>Você ganha 100 blocos de claim por hora jogada.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Comando</th><th>Faz</th></tr></thead><tbody><tr><td><code>/trust &lt;jogador></code></td><td>Amigo pode construir na sua claim</td></tr><tr><td><code>/containertrust &lt;jogador></code></td><td>Amigo pode abrir seus baús</td></tr><tr><td><code>/accesstrust &lt;jogador></code></td><td>Amigo pode usar botões/alavancas</td></tr><tr><td><code>/abandonclaim</code></td><td>Deletar a claim (recupera os blocos)</td></tr></tbody></table></div>
+<hr/>
+<h2 id="️-mineração-e-coleta">⛏️ Mineração e Coleta<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-mineração-e-coleta" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>BetterVeinminer</strong> — Agache (Shift) + Picareta = minera a veia inteira de minério e pedras. Cooldown de 10s.</p>
+<p><strong>TreeGravity</strong> — Quebre o tronco de baixo de qualquer árvore = a árvore inteira cai (troncos + folhas).</p>
+<hr/>
+<h2 id="-encantamentos-custom-53">✨ Encantamentos Custom (53)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-encantamentos-custom-53" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Obtidos na <strong>mesa de encantamento</strong> (nível 25+). Também aparecem em loot de dungeon e trocas de villager. Use <code>/es list</code> no jogo para ver todos.</p>
+<p><strong>Raridade</strong>: Comum > Incomum > Raro > Lendário. Quanto menor o peso, mais difícil de aparecer. Encante <strong>livros</strong> em vez de itens direto — assim você pode vender livros raros na sua loja (<code>/qs create</code>) por R$500-2000 cada!</p>
+<p>Villagers também vendem livros encantados com esses enchants — fique de olho nos trades.</p>
+<blockquote>
+<p>✨ <strong>Saber mais</strong>: <a href="../minecraft-smp/enchantments" class="internal alias" data-slug="minecraft-smp/enchantments">Guia completo de Encantamentos</a> — 53 encantamentos com nível, raridade, ferramenta e 💲 preço</p>
+</blockquote>
+<h3 id="️-mineração-e-ferramentas">⛏️ Mineração e Ferramentas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-mineração-e-ferramentas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Encantamento</th><th>Nível Máx</th><th>Mesa</th><th>Raridade</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>Excavation</strong></td><td>VII</td><td>III</td><td>⭐⭐ Raro</td><td>Minera 3x3 (lvl 3), 5x5 (lvl 5), 7x7 (lvl 7)</td></tr><tr><td><strong>Sunforged</strong></td><td>I</td><td>I</td><td>⭐ Lendário</td><td>Auto-smelt — derrete minério ao quebrar</td></tr><tr><td><strong>Telekinesis</strong></td><td>I</td><td>I</td><td>⭐⭐ Raro</td><td>Drops vão direto pro inventário</td></tr><tr><td><strong>Haste</strong></td><td>II</td><td>II</td><td>⭐ Lendário</td><td>Mineração mais rápida (efeito Haste)</td></tr><tr><td><strong>Rejuvenation</strong></td><td>III</td><td>III</td><td>⭐⭐⭐⭐ Comum</td><td>Regenera durabilidade lentamente</td></tr><tr><td><strong>Tree Feller</strong></td><td>❌</td><td>—</td><td>—</td><td>Desabilitado (TreeGravity já faz)</td></tr><tr><td><strong>Auto Replant</strong></td><td>I</td><td>I</td><td>⭐⭐⭐⭐ Comum</td><td>Colheita replanta automaticamente</td></tr></tbody></table></div>
+<h3 id="️-armas-corpo-a-corpo">⚔️ Armas Corpo a Corpo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-armas-corpo-a-corpo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Encantamento</th><th>Nível Máx</th><th>Mesa</th><th>Raridade</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>Vampiric</strong></td><td>I</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Rouba vida ao bater (lifesteal)</td></tr><tr><td><strong>Beheading</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Chance de dropar cabeça do mob</td></tr><tr><td><strong>Lightning</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Raio ao bater no inimigo</td></tr><tr><td><strong>Exploding</strong></td><td>I</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Inimigos explodem ao morrer</td></tr><tr><td><strong>Toxic</strong></td><td>I</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Reduz cura do inimigo</td></tr><tr><td><strong>Crushing</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>+Dano contra armadura pesada</td></tr><tr><td><strong>Perforating</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>+Dano contra armadura leve</td></tr><tr><td><strong>Withering</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Causa Wither ao atacar</td></tr><tr><td><strong>Poisoning</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Causa Veneno ao atacar</td></tr><tr><td><strong>Weakening</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>Causa Fraqueza ao atacar</td></tr><tr><td><strong>Sapping</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Drena vida/stamina do inimigo</td></tr><tr><td><strong>Stunning</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>Atordoa o inimigo</td></tr><tr><td><strong>Slowness</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>Causa Lentidão ao atacar</td></tr><tr><td><strong>Blinding</strong></td><td>I</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Causa Cegueira ao atacar</td></tr><tr><td><strong>Nausea</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>Causa Náusea ao atacar</td></tr><tr><td><strong>Streak Damage</strong></td><td>III</td><td>III</td><td>⭐⭐ Raro</td><td>+Dano por hit consecutivo (combo)</td></tr><tr><td><strong>Pulling</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>Puxa o inimigo pra perto</td></tr><tr><td><strong>Ground Stomping</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Dano em área ao cair de altura</td></tr></tbody></table></div>
+<h3 id="-arco-e-distância">🏹 Arco e Distância<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-arco-e-distância" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Encantamento</th><th>Nível Máx</th><th>Mesa</th><th>Raridade</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>AOE Arrows</strong></td><td>II</td><td>I</td><td>⭐⭐ Raro</td><td>Flechas causam dano em área</td></tr><tr><td><strong>Rapid Shot</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Dispara flechas mais rápido</td></tr><tr><td><strong>Grappling</strong></td><td>II</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Flecha te puxa até onde acertou</td></tr></tbody></table></div>
+<h3 id="️-armadura-e-defesa">🛡️ Armadura e Defesa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-armadura-e-defesa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Encantamento</th><th>Nível Máx</th><th>Mesa</th><th>Raridade</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>Shielding</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Chance de defletir projéteis</td></tr><tr><td><strong>Chemical Shield</strong></td><td>I</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Bloqueia efeitos de poções ao defender</td></tr><tr><td><strong>Steady</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>Resistência a knockback</td></tr><tr><td><strong>Reinforced Plating</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>+Armor adicional</td></tr><tr><td><strong>Damage Reduction</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Reduz dano recebido</td></tr><tr><td><strong>Vitality</strong></td><td>V</td><td>IV</td><td>⭐⭐⭐⭐ Comum</td><td>+% de cura recebida</td></tr><tr><td><strong>Vigorous</strong></td><td>V</td><td>V</td><td>⭐⭐⭐ Incomum</td><td>+Vida máxima</td></tr><tr><td><strong>Metabolism</strong></td><td>II</td><td>II</td><td>⭐⭐⭐⭐ Comum</td><td>Reduz fome</td></tr><tr><td><strong>Kinship</strong></td><td>III</td><td>III</td><td>⭐⭐⭐⭐ Comum</td><td>Bônus por aliados próximos</td></tr><tr><td><strong>Potion Potency Buff</strong></td><td>II</td><td>II</td><td>⭐ Lendário</td><td>Poções duram mais e são mais fortes</td></tr></tbody></table></div>
+<h3 id="-movimento-e-utilidade">🏃 Movimento e Utilidade<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-movimento-e-utilidade" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Encantamento</th><th>Nível Máx</th><th>Mesa</th><th>Raridade</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>Flight</strong></td><td>III</td><td>II</td><td>⭐ Lendário</td><td>Elytra voa sem foguete</td></tr><tr><td><strong>Speed Boost</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>+Velocidade ao equipar</td></tr><tr><td><strong>Jump Boost</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>+Pulo ao equipar</td></tr><tr><td><strong>Fire Resistance</strong></td><td>I</td><td>I</td><td>⭐ Lendário</td><td>Resistência ao fogo ao equipar</td></tr><tr><td><strong>Night Vision</strong></td><td>I</td><td>I</td><td>⭐⭐ Raro</td><td>Visão noturna ao equipar</td></tr><tr><td><strong>Water Breathing</strong></td><td>I</td><td>I</td><td>⭐⭐⭐⭐ Comum</td><td>Respiração aquática ao equipar</td></tr><tr><td><strong>Luck</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>+Sorte ao equipar</td></tr><tr><td><strong>Strength</strong></td><td>II</td><td>II</td><td>⭐⭐⭐ Incomum</td><td>+Força ao equipar</td></tr><tr><td><strong>Step Height</strong></td><td>I</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Sobe blocos inteiros (igual cavalo)</td></tr><tr><td><strong>Block Reach</strong></td><td>III</td><td>III</td><td>⭐⭐ Raro</td><td>+Alcance de blocos</td></tr><tr><td><strong>Lava Walker</strong></td><td>II</td><td>II</td><td>⭐⭐ Raro</td><td>Anda sobre lava (igual Frost Walker)</td></tr><tr><td><strong>Illuminated</strong></td><td>I</td><td>I</td><td>⭐⭐⭐ Incomum</td><td>Ilumina área ao redor</td></tr><tr><td><strong>Soulbound</strong></td><td>I</td><td>I</td><td>⭐⭐⭐⭐ Comum</td><td>Não perde o item ao morrer</td></tr><tr><td><strong>Shockwave</strong></td><td>III</td><td>III</td><td>⭐⭐ Raro</td><td>Click direito → empurra mobs</td></tr></tbody></table></div>
+<h3 id="-tridente">🔱 Tridente<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-tridente" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Encantamento</th><th>Nível Máx</th><th>Mesa</th><th>Raridade</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>Trident Sharpness</strong></td><td>V</td><td>IV</td><td>⭐⭐⭐ Incomum</td><td>+Dano no tridente</td></tr><tr><td><strong>Scale / Scale 2</strong></td><td>II</td><td>II</td><td>⭐⭐ Raro</td><td>Escala paredes / nada melhor</td></tr><tr><td><strong>Shield Downer</strong></td><td>III</td><td>III</td><td>⭐⭐⭐ Incomum</td><td>Quebra escudo do inimigo</td></tr></tbody></table></div>
+<h3 id="-maldições">💀 Maldições<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-maldições" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Encantamento</th><th>Nível Máx</th><th>Mesa</th><th>Raridade</th><th>Efeito</th></tr></thead><tbody><tr><td><strong>Curse of Brittle</strong></td><td>III</td><td>III</td><td>⭐ Lendário</td><td>Item quebra mais rápido</td></tr><tr><td><strong>Curse of Heavy</strong></td><td>I</td><td>I</td><td>⭐ Lendário</td><td>Movimento mais lento</td></tr><tr><td><strong>Curse of Hunger</strong></td><td>I</td><td>I</td><td>⭐ Lendário</td><td>Fome constante</td></tr><tr><td><strong>Curse of Berserk</strong></td><td>I</td><td>I</td><td>⭐ Lendário</td><td>+Dano causado E recebido</td></tr></tbody></table></div>
+<blockquote>
+<p>💰 <strong>Dica de ouro</strong>: Encante <strong>livros</strong> em vez de itens! Livros com <code>Excavation V</code>, <code>Flight III</code> ou <code>Sunforged</code> podem ser vendidos por <strong>R<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>5.000</strong> na sua loja (<code>/qs create</code>). Os encantamentos lendários (peso 10 ou menos) são os mais valiosos — compre baixo, venda alto!</p>
+</blockquote>
+<hr/>
+<h2 id="-habilidades-rpg-auraskills">🎮 Habilidades RPG (AuraSkills)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-habilidades-rpg-auraskills" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Upe suas habilidades jogando normalmente. Ganhe <strong>R$ por level</strong> e desbloqueie habilidades passivas.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Skill</th><th>Como upar</th></tr></thead><tbody><tr><td>Mineração</td><td>Quebrar minérios e pedras</td></tr><tr><td>Combate</td><td>Matar mobs com espada/machado</td></tr><tr><td>Arquearia</td><td>Matar mobs com arco</td></tr><tr><td>Fazenda</td><td>Plantar e colher</td></tr><tr><td>Forrageamento</td><td>Cortar árvores</td></tr><tr><td>Pesca</td><td>Pescar</td></tr><tr><td>Escavação</td><td>Quebrar terra/areia/cascalho</td></tr><tr><td>Defesa</td><td>Tomar dano</td></tr><tr><td>Agilidade</td><td>Pular/correr</td></tr><tr><td>Alquimia</td><td>Fazer poções</td></tr><tr><td>Encantamento</td><td>Encantar itens</td></tr></tbody></table></div>
+<p><strong>Comandos:</strong> <code>/skills</code> (menu), <code>/stats</code> (atributos), <code>/mining</code>, <code>/fighting</code> etc.</p>
+<blockquote>
+<p>📖 <strong>Saber mais</strong>: <a href="../minecraft-smp/auraskills" class="internal alias" data-slug="minecraft-smp/auraskills">Guia completo de AuraSkills</a> — todas as skills, mana abilities, stats, progressão e dicas</p>
+</blockquote>
+<hr/>
+<h2 id="-cervejaria-breweryx">🍺 Cervejaria (BreweryX)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-cervejaria-breweryx" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>21 receitas de bebidas! <strong>Não usa brewing stand</strong> — use <strong>caldeirões</strong> com fogo embaixo.</p>
+<h3 id="como-fazer">Como Fazer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#como-fazer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Coloque um <strong>caldeirão</strong> e <strong>fogo embaixo</strong> (magma block, fogueira, netherrack+fogo)</li>
+<li>Encha de <strong>água</strong> com balde</li>
+<li>Jogue os <strong>ingredientes</strong> dentro (clique direito com cada item)</li>
+<li>Use um <strong>relógio</strong> (clique direito no caldeirão) pra ver o tempo</li>
+<li>Pegue com <strong>frasco de vidro</strong> quando pronto</li>
+<li>Se a receita pedir: <strong>destile</strong> na brewing stand (sem pó de blaze, só a poção) e <strong>envelheça</strong> num barril de madeira</li>
+</ol>
+<blockquote>
+<p>🍺 <strong>Saber mais</strong>: <a href="../minecraft-smp/brewery" class="internal alias" data-slug="minecraft-smp/brewery">Guia completo de Cervejaria</a> — 21 receitas com ingredientes, tempos, efeitos e 💲 preço sugerido</p>
+</blockquote>
+<h3 id="receitas">Receitas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#receitas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="-sem-álcool-0--beba-à-vontade">🟢 Sem Álcool (0%) — beba à vontade<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-sem-álcool-0--beba-à-vontade" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Poção</th><th>Ingredientes</th><th>Efeito</th><th>Uso</th></tr></thead><tbody><tr><td>☕ Café</td><td>4 Cacau + 2 Açúcar + 1 Leite</td><td>Velocidade I + Haste I (5min)</td><td>Minerar</td></tr><tr><td>🔋 Energético</td><td>3 Cacau + 6 Açúcar + 1 Redstone</td><td>Velocidade III + Pulo III + Haste II (2min)</td><td>Explosão de ação</td></tr><tr><td>🌵 Suco de Cacto</td><td>4 Cacto + 2 Açúcar</td><td>Regeneração II + Anti-fogo (2min)</td><td>Cura rápida</td></tr><tr><td>🍷 Suco de Beterraba</td><td>6 Beterraba + 2 Maçã + 2 Açúcar</td><td>Vida extra II (4min)</td><td>Tankar lutas</td></tr><tr><td>🧊 Chá Gelado</td><td>4 Berries + 2 Gelo + 2 Açúcar + 1 Água</td><td>Velocidade + Pulo + Queda Lenta</td><td>Exploração segura</td></tr></tbody></table></div>
+<h4 id="-álcool-baixo-5-15--social">🟡 Álcool Baixo (5-15%) — social<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-álcool-baixo-5-15--social" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Poção</th><th>Ingredientes</th><th>Efeito</th><th>Álcool</th></tr></thead><tbody><tr><td>🍺 Cerveja</td><td>6 Trigo + 2 Açúcar</td><td>Resistência I</td><td>10%</td></tr><tr><td>🍏 Cidra</td><td>6 Maçã + 2 Açúcar</td><td>Sorte I (5min)</td><td>8%</td></tr><tr><td>🍯 Hidromel</td><td>4 Mel + 2 Açúcar</td><td>Regeneração + Velocidade</td><td>15%</td></tr><tr><td>🍷 Vinho Tinto</td><td>8 Berries + 2 Glow Berries + 2 Açúcar</td><td>Regeneração II</td><td>12%</td></tr><tr><td>🌑 Stout</td><td>8 Trigo + 2 Cacau + 2 Açúcar</td><td>Força I (5min)</td><td>12%</td></tr><tr><td>🎃 Licor de Abóbora</td><td>6 Abóbora + 3 Açúcar + 2 Ovo + 1 Leite</td><td>Absorção II + Sorte (5min)</td><td>10%</td></tr></tbody></table></div>
+<h4 id="-álcool-médio-30-45--aventureiro">🟠 Álcool Médio (30-45%) — aventureiro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-álcool-médio-30-45--aventureiro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Poção</th><th>Ingredientes</th><th>Efeito</th><th>Álcool</th></tr></thead><tbody><tr><td>🥃 Rum</td><td>12 Cana + 4 Açúcar</td><td>Força I + Velocidade (3min)</td><td>30%</td></tr><tr><td>🌵 Tequila</td><td>8 Cacto + 4 Açúcar + 2 Glow Berries</td><td>Pulo II + Velocidade II</td><td>35%</td></tr><tr><td>🥃 Whiskey</td><td>10 Trigo + 3 Açúcar</td><td>Haste II (4min)</td><td>40%</td></tr><tr><td>🌊 Poção do Mar</td><td>6 Kelp + 4 Prismarine + 2 Bacalhau</td><td>Respiração + Golfinho + Visão Noturna (8min)</td><td>5%</td></tr><tr><td>🟣 Elixir do Fim</td><td>4 Chorus + 2 Chorus Estourado + 2 Ender Pearl</td><td>Levitação + Queda Lenta + Visão Noturna</td><td>40%</td></tr></tbody></table></div>
+<h4 id="-álcool-forte-45-60--guerreiro">🔴 Álcool Forte (45-60%) — guerreiro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-álcool-forte-45-60--guerreiro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Poção</th><th>Ingredientes</th><th>Efeito</th><th>Álcool</th></tr></thead><tbody><tr><td>🥔 Vodka</td><td>8 Batata + 3 Açúcar</td><td>Resistência II</td><td>45%</td></tr><tr><td>🏴‍☠️ Grog</td><td>10 Cana + 3 Nether Wart + 2 Pólvora + 1 Água</td><td>Força III + Respiração</td><td>45%</td></tr><tr><td>🥕 Moonshine</td><td>6 Cenoura + 4 Açúcar</td><td>Força III</td><td>55%</td></tr><tr><td>🧪 Absinto</td><td>4 Nether Wart + 2 Blaze + 2 Glowstone + 2 Frasco</td><td>Visão Noturna (10min) + Força II</td><td>60%</td></tr><tr><td>🔥 Whiskey Flamejante</td><td>3 Blaze + 2 Pólvora + 2 Nether Wart</td><td>Anti-fogo (8min) + Força III</td><td>50%</td></tr></tbody></table></div>
+<h3 id="efeitos-da-bebedeira">Efeitos da Bebedeira<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#efeitos-da-bebedeira" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Álcool 10-20%: Anda torto, tela balança</li>
+<li>Álcool 30-40%: Náusea, vômito</li>
+<li>Álcool 50%+: Desmaio</li>
+<li><strong>Curas:</strong> Pão (-4), Maçã (-2), Mel (-3), Leite (-2), Maçã Dourada (-6)</li>
+</ul>
+<hr/>
+<h2 id="-personalização">🎨 Personalização<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-personalização" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Comando</th><th>Faz</th></tr></thead><tbody><tr><td><code>/skin &lt;nome></code></td><td>Trocar sua skin (ex: <code>/skin Notch</code>)</td></tr></tbody></table></div>
+<p>Skins offline — qualquer nome de jogador premium funciona.</p>
+<hr/>
+<h2 id="-lojas">🏪 Lojas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-lojas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="criar-sua-loja-quickshop">Criar sua Loja (QuickShop)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#criar-sua-loja-quickshop" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Segure o item que quer vender</li>
+<li>Olhe para um baú</li>
+<li><code>/qs create &lt;preço></code></li>
+<li>Clique no baú pra criar a loja</li>
+</ol>
+<p><strong>Todas as lojas são de jogadores.</strong> Não há loja admin — a economia é 100% movida pelos players.</p>
+<blockquote>
+<p>🏪 <strong>Saber mais</strong>: <a href="../minecraft-smp/shops" class="internal alias" data-slug="minecraft-smp/shops">Guia de Lojas e Economia</a> — top 20 itens, estratégias de lucro, como criar loja</p>
+</blockquote>
+<hr/>
+<h2 id="-datapacks-e-crafting-tweaks">📦 Datapacks e Crafting Tweaks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-datapacks-e-crafting-tweaks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Melhorias vanilla instaladas no servidor (via Vanilla Tweaks):</p>
+<p><strong>Datapacks:</strong> Armor Statues, More Mob Heads, Player Head Drops, Double Shulker Shells, Dragon Drops Elytra, Cauldron Concrete, Cauldron Mud, Chunk Loaders, Elevators, Ender Chest Always Drops, Armored Elytra, Bat Membranes, Silk Touch Budding Amethyst, XP Bottling, Nether Portal Coords</p>
+<p><strong>Crafting:</strong> Craftable Horse Armor, Enchanted Golden Apple (8 blocos ouro + maçã dourada), Rotten Flesh → Leather, Back to Blocks, Universal Dyeing, More Bricks/Stairs/Trapdoors, Unpackable Ice/Wool/Wart</p>
+<hr/>
+<h2 id="-roleplay-e-loop-de-jogo">🎭 Roleplay e Loop de Jogo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-roleplay-e-loop-de-jogo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="o-conceito">O Conceito<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#o-conceito" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Haven SMP é um servidor <strong>semi-vanilla comunitário</strong>. Construímos juntos uma cidade ao redor do spawn — cada um com sua casa, loja, fazenda. O foco é colaboração: um fazendeiro vende comida, um minerador vende minérios, um cervejeiro vende poções. A economia é movida pelos jogadores.</p>
+<p>As áreas mais distantes (via <code>/tprandom</code>) são para mineração e coleta de recursos raros. Você sempre volta ao spawn — não existem bases isoladas a 10.000 blocos.</p>
+<h3 id="o-loop-do-jogador">O Loop do Jogador<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#o-loop-do-jogador" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Você começa jogando vanilla normalmente. Aos poucos:</p>
+<ol>
+<li><strong>Spawn</strong> → Veja <code>/rules</code>, explore a cidade. Construa sua primeira casa nas redondezas do spawn</li>
+<li><strong>Primeira Grana</strong> → Mine, farme, pesque, venda itens com <code>/sell hand</code>. Junte os primeiros R$</li>
+<li><strong>Sua Claim</strong> → Com uma pá de ouro, proteja seu terreno com <code>/trust</code> pros amigos</li>
+<li><strong>Evolua</strong> → Upe suas skills jogando (ganha R$ por level). Encante itens na mesa com os +50 encantamentos custom</li>
+<li><strong>Explore</strong> → <code>/tprandom</code> (R$1.000) para minerar em lugares distantes. Pegue os recursos e volte ao spawn</li>
+<li><strong>Comércio</strong> → Monte sua loja com <code>/qs create</code>. Venda o que produz, compre o que precisa dos outros jogadores</li>
+<li><strong>Especialização</strong> → Seja o cervejeiro da cidade (BreweryX), o minerador com Excavation 7x7, ou o guerreiro com Soulbound e Vampiric</li>
+<li><strong>Fim de Jogo</strong> → Derrote o Ender Dragon em grupo, consiga Elytra, explore o End juntos</li>
+</ol>
+<h3 id="cargos-e-profissões">Cargos e Profissões<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cargos-e-profissões" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Desbloqueados via <strong>AdvancedAchievements</strong> — conquiste achievements específicos para liberar cargos com benefícios:</p>
+<ul>
+<li>⛏️ <strong>Minerador</strong> — Bônus de 2x R$ ao vender minérios (achievement: “Rei dos Diamantes”)</li>
+<li>🌾 <strong>Fazendeiro</strong> — Colheita em área maior (achievement: “Fazendeiro”)</li>
+<li>🍺 <strong>Cervejeiro</strong> — Ingredientes rendem mais (achievement: “Sommelier Lendário”)</li>
+<li>🏪 <strong>Mercador</strong> — Taxa reduzida ao criar lojas (achievement: “Bilionário Villager”)</li>
+<li>🏗️ <strong>Construtor</strong> — Ganha mais claim blocks/hora (achievement: “Torre de Vigilância”)</li>
+</ul>
+<p>Use <code>/aach list</code> para ver todos os achievements e <code>/aach stats</code> para seu progresso.</p>
+<hr/>
+<h2 id="-informações-técnicas">📊 Informações Técnicas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-informações-técnicas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>IP Java:</strong> <code>crafty.inovati.cloud</code> (porta padrão 25565)</li>
+<li><strong>IP Bedrock:</strong> <code>crafty.inovati.cloud</code> porta <code>19132</code> (UDP)</li>
+<li><strong>Versão:</strong> Minecraft 26.2 (1.21.8)</li>
+<li><strong>Server:</strong> Purpur 26.2-2614</li>
+<li><strong>Seed:</strong> <code>682733421648135930</code> — escolhida por ter <strong>Slime Chunks extremamente densos</strong> próximos ao spawn. A chunk <code>-1, 9</code> tem score 13.00 (máximo) — ideal pra farms de slime logo no início.</li>
+<li><strong>Mundo:</strong> Large Biomes</li>
+<li><strong>Dificuldade:</strong> Normal</li>
+<li><strong>RAM:</strong> 6GB dedicados</li>
+<li><strong>VPS:</strong> Hostinger KVM 2, 2 vCPU, 8GB RAM, 100GB NVMe</li>
+<li><strong>Painel:</strong> Crafty Controller 4.10.7</li>
+</ul>
+<h3 id="plugins-instalados-24">Plugins Instalados (24)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#plugins-instalados-24" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Plugin</th><th>Versão</th><th>Função</th></tr></thead><tbody><tr><td>AdvancedAchievements</td><td>7.4.2</td><td>Conquistas com recompensa em R$ — <code>/aach list</code></td></tr><tr><td>AnimatedScoreboard</td><td>0.3.9</td><td>Scoreboard lateral (dinheiro, ping, TPS)</td></tr><tr><td>AuraSkills</td><td>2.3.12</td><td>RPG — 11 skills, R$ por level</td></tr><tr><td>BetterSleeping</td><td>1.4</td><td>Dormir com % de jogadores</td></tr><tr><td>BetterVeinminer</td><td>1.5.2</td><td>Veia de minério (shift+picareta)</td></tr><tr><td>BreweryX</td><td>3.7.0</td><td>Cervejaria — 21 receitas em caldeirão</td></tr><tr><td>Chunky</td><td>1.5.3</td><td>Pré-geração de chunks (anti-lag)</td></tr><tr><td>ClearLag</td><td>3.2.2</td><td>Limpa itens do chão a cada 10min</td></tr><tr><td>DiscordSRV</td><td>1.30.5</td><td>Chat cruzado Discord↔Jogo</td></tr><tr><td>EconomyShopGUI</td><td>7.1.1</td><td>Loja do admin (spawn)</td></tr><tr><td>EnchantsSquared</td><td>2.5.20</td><td>53 encantamentos na mesa</td></tr><tr><td>EssentialsX</td><td>2.22.0</td><td>Comandos, economia, /home, /tpa</td></tr><tr><td>Floodgate</td><td>2.2.5</td><td>Autenticação Bedrock + linking</td></tr><tr><td>Geyser-Spigot</td><td>2.11.0</td><td>Crossplay Bedrock</td></tr><tr><td>GriefPrevention</td><td>16.18.7</td><td>Claims com pá de ouro</td></tr><tr><td>LuckPerms</td><td>5.5.60</td><td>Permissões e grupos</td></tr><tr><td>PlaceholderAPI</td><td>2.12.3</td><td>Placeholders (%player%, %money%)</td></tr><tr><td>ProtocolLib</td><td>5.4.0</td><td>Biblioteca de protocolo</td></tr><tr><td>QuickShop-Hikari</td><td>6.2.0.11</td><td>Lojas de jogador</td></tr><tr><td>SkinsRestorer</td><td>15.12.5</td><td>/skin offline</td></tr><tr><td>StackMob</td><td>5.9.2</td><td>Agrupa mobs iguais (8 hostis, 16 animais)</td></tr><tr><td>TAB</td><td>5.0.6</td><td>Tablist com ping e header</td></tr><tr><td>TreeGravity</td><td>4.7.0</td><td>Árvore cai ao quebrar tronco</td></tr><tr><td>Vault</td><td>1.7.3</td><td>API de economia</td></tr></tbody></table></div>
+<hr/>
+<h2 id="️-modpack-client-side-opcional">🖥️ Modpack Client-Side (Opcional)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-modpack-client-side-opcional" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Se quiser melhorar desempenho e qualidade de vida no seu cliente (100% permitido, zero impacto no servidor):</p>
+<p><strong>Requisitos:</strong> Minecraft 26.2 (1.21.8) + Fabric Loader 0.16.x</p>
+<p><strong>Mods recomendados (43 mods com descrição):</strong></p>
+<h4 id="-performance">⚡ Performance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-performance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mod</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>Sodium</strong></td><td>Renderizador otimizado — 2x-5x mais FPS que o vanilla</td></tr><tr><td><strong>Lithium</strong></td><td>Otimiza lógica do servidor (física, mobs, ticking)</td></tr><tr><td><strong>Iris Shaders</strong></td><td>Shaders compatíveis com Sodium (Complementary, BSL)</td></tr><tr><td><strong>EntityCulling</strong></td><td>Não renderiza mobs atrás de paredes — +FPS grátis</td></tr><tr><td><strong>FerriteCore</strong></td><td>Reduz uso de RAM em 30-50%</td></tr><tr><td><strong>ModernFix</strong></td><td>Corrige bugs de performance e memory leaks</td></tr></tbody></table></div>
+<h4 id="️-mapa">🗺️ Mapa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-mapa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mod</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>JourneyMap</strong></td><td>Mapa completo do mundo no canto da tela. Salva explorado, marca waypoints</td></tr></tbody></table></div>
+<h4 id="-crafting-e-inventário">🔧 Crafting e Inventário<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-crafting-e-inventário" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mod</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>JEI (Just Enough Items)</strong></td><td>Catálogo de todas as receitas do jogo (tecla R no item)</td></tr><tr><td><strong>JEI WorldGen</strong></td><td>Mostra onde cada minério/bloco gera no mundo</td></tr><tr><td><strong>JEP (Just Enough Professions)</strong></td><td>Mostra trades de villager no JEI</td></tr><tr><td><strong>JER (Just Enough Resources)</strong></td><td>Mostra % de drop de mobs e loot de baú</td></tr><tr><td><strong>Crafting Tweaks</strong></td><td>Botões de rotacionar, balancear e limpar a mesa de craft</td></tr><tr><td><strong>Mouse Tweaks</strong></td><td>Arrasta itens com Ctrl+Scroll, shift+clique melhorado</td></tr><tr><td><strong>Inventory Profiles Next</strong></td><td>Ordena inventário (tecla R), troca ferramenta quebrada, auto-reabastece</td></tr></tbody></table></div>
+<h4 id="️-utilitários">🛠️ Utilitários<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-utilitários" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mod</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>Zoomify</strong></td><td>Zoom suave (tecla C), configuração de FOV e transição</td></tr><tr><td><strong>AppleSkin</strong></td><td>Barra de comida mostra saturação exata</td></tr><tr><td><strong>Jade (What am I looking at)</strong></td><td>Mostra nome do bloco/mob/player ao olhar</td></tr><tr><td><strong>BetterF3</strong></td><td>F3 turbinado — mostra info que importa, esconde o resto</td></tr><tr><td><strong>Light Overlay</strong></td><td>Mostra nível de luz (F7) — blocos vermelhos spawnam mob</td></tr></tbody></table></div>
+<h4 id="️-construção--destaque-litematica">🏗️ Construção — Destaque: Litematica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-construção--destaque-litematica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Por que Litematica?</strong> É o “WordPress” da construção — carrega uma planta (schematic) que aparece como holograma no mundo, e você constroi por cima. Alguém faz o design no criativo → exporta schematic → todo mundo constroi no survival.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mod</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>Litematica</strong></td><td>Cria, salva e projeta schematics (plantas) no mundo. Tecla <code>M</code></td></tr><tr><td><strong>MaLiLib</strong></td><td>Biblioteca obrigatória do Litematica</td></tr><tr><td><strong>MiniHUD</strong></td><td>HUD customizável: chunk borders, light levels, coordenadas</td></tr><tr><td><strong>Tweakeroo</strong></td><td>Auto-reabastece blocos da shulker, fast place, gamma boost</td></tr><tr><td><strong>Litematica Printer</strong></td><td>Auto-constrói schematics automaticamente</td></tr></tbody></table></div>
+<p><strong>Teclas principais:</strong> <code>M</code> = menu, <code>M+C</code> = mover projeção, <code>M+G</code> = verificar camadas, <code>M+P</code> = auto-construir</p>
+<blockquote>
+<p>💡 Baixe schematics em <a href="https://www.minecraft-schematics.com/" class="external">minecraft-schematics.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> e monte com os amigos no survival!</p>
+</blockquote>
+<blockquote>
+<p>🏗️ <strong>Saber mais</strong>: <a href="../minecraft-smp/litematica" class="internal alias" data-slug="minecraft-smp/litematica">Guia completo de Litematica</a> — teclas, instalação, como usar, dicas e troubleshooting</p>
+</blockquote>
+<h4 id="-visual">✨ Visual<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-visual" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mod</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>3D Skin Layers</strong></td><td>Camadas 3D da skin igual Bedrock (capa, chapéu, cabelo…)</td></tr><tr><td><strong>Continuity</strong></td><td>Vidro e arenito se conectam (texturas unidas)</td></tr><tr><td><strong>LambDynamicLights</strong></td><td>Tocha/machado flamejante na mão ilumina ao redor</td></tr><tr><td><strong>Screenshot Viewer</strong></td><td>Galeria de screenshots dentro do jogo</td></tr></tbody></table></div>
+<h4 id="-bônus">🎁 Bônus<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-bônus" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mod</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>Shulker Box Tooltip</strong></td><td>Passa mouse na shulker → vê o que tem dentro</td></tr><tr><td><strong>Chest Tracker</strong></td><td>Busca “diamante” → mostra em qual baú próximo tem</td></tr><tr><td><strong>Distant Horizons</strong></td><td>Renderiza chunks a 256 de distância em LOD (visual, não carrega). <strong>Desativado por padrão</strong> — ative no Mod Menu se quiser</td></tr><tr><td><strong>CraftPresence</strong></td><td>Mostra no Discord “Jogando Haven SMP” com detalhes</td></tr><tr><td><strong>Flashback</strong></td><td>Grava replay das últimas horas sem perda de FPS</td></tr></tbody></table></div>
+<h4 id="-shaders-e-texturas">🌄 Shaders e Texturas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-shaders-e-texturas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Pack</th><th>Descrição</th></tr></thead><tbody><tr><td><strong>Complementary Reimagined</strong></td><td>Shader leve e bonito — água reflexiva, luz dinâmica, sombras</td></tr><tr><td><strong>Sildur’s Enhanced Default</strong></td><td>Shader vanilla melhorado — água, luz, sem exagero</td></tr><tr><td><strong>Faithful 32x</strong></td><td>Texturas vanilla em alta resolução (minérios destacados)</td></tr><tr><td><strong>Stay True</strong></td><td>Vanilla melhorado — folhas densas, grama variada, connected textures</td></tr></tbody></table></div>
+<p>Use o <strong>Prism Launcher</strong> (ou Freesm Launcher) — gerencie tudo facilmente.<br/>
+<strong>Arquivo pronto disponível:</strong> <code>Haven SMP.zip</code> — importe direto no Prism Launcher como instância.</p>
+<hr/>
+<h2 id="-documentação-completa">📚 Documentação Completa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-documentação-completa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Arquivo</th><th>Conteúdo</th></tr></thead><tbody><tr><td><a href="../minecraft-smp/litematica" class="internal alias" data-slug="minecraft-smp/litematica">🏗️ Litematica</a></td><td>Guia completo: teclas, schematics, printer, dicas comunitárias</td></tr><tr><td><a href="../minecraft-smp/auraskills" class="internal alias" data-slug="minecraft-smp/auraskills">🎮 Habilidades RPG</a></td><td>11 skills, mana abilities, stats, progressão e dicas</td></tr><tr><td><a href="../minecraft-smp/enchantments" class="internal alias" data-slug="minecraft-smp/enchantments">✨ Encantamentos</a></td><td>53 encantamentos com níveis, raridade, ferramenta e preço de venda</td></tr><tr><td><a href="../minecraft-smp/brewery" class="internal alias" data-slug="minecraft-smp/brewery">🍺 Cervejaria</a></td><td>21 receitas com ingredientes, tempos, efeitos e preço sugerido</td></tr><tr><td><a href="../minecraft-smp/shops" class="internal alias" data-slug="minecraft-smp/shops">🏪 Lojas e Economia</a></td><td>Como criar loja, top 20 itens, estratégias de lucro</td></tr><tr><td><a href="../minecraft-smp/worth" class="internal alias" data-slug="minecraft-smp/worth">💲 Tabela de Preços</a></td><td>Guia <code>/sell</code> completo — todos os itens por categoria com preço</td></tr><tr><td><a href="../minecraft-smp/economy" class="internal alias" data-slug="minecraft-smp/economy">💰 Economia e Comandos</a></td><td>Todos os comandos com custos, como ganhar/gastar</td></tr></tbody></table></div>
+<hr/>
+<h2 id="-regras">📋 Regras<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-regras" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Respeite os outros jogadores</li>
+<li>Não faça grief — use o sistema de claims</li>
+<li>Trapas e hacks = ban permanente</li>
+<li>Spawn é área comum — não construa no spawn sem autorização</li>
+<li>Dúvidas? <code>/msg RopesuDesu</code> ou pergunte no chat!</li>
+</ol>
+<hr/>
+<p><strong>Bom jogo e bem-vindo ao Haven SMP! ⚔️</strong></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Visão de gráfico</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1" aria-expanded="true"><h3>Sumário</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#️-haven-smp--servidor-minecraft-vanilla-crossplay" data-for="️-haven-smp--servidor-minecraft-vanilla-crossplay">⚔️ Haven SMP — Servidor Minecraft Vanilla+ Crossplay</a></li><li class="depth-1"><a href="#-como-entrar" data-for="-como-entrar">🔗 Como Entrar</a></li><li class="depth-2"><a href="#java-edition" data-for="java-edition">Java Edition</a></li><li class="depth-2"><a href="#bedrock-edition-console-celular-pc" data-for="bedrock-edition-console-celular-pc">Bedrock Edition (Console, Celular, PC)</a></li><li class="depth-2"><a href="#-primeira-vez-linke-suas-contas" data-for="-primeira-vez-linke-suas-contas">🔄 Primeira Vez? Linke Suas Contas!</a></li><li class="depth-1"><a href="#-economia" data-for="-economia">💰 Economia</a></li><li class="depth-1"><a href="#-comandos" data-for="-comandos">📜 Comandos</a></li><li class="depth-2"><a href="#todo-jogador" data-for="todo-jogador">Todo Jogador</a></li><li class="depth-1"><a href="#️-proteção-de-terreno-griefprevention" data-for="️-proteção-de-terreno-griefprevention">🛡️ Proteção de Terreno (GriefPrevention)</a></li><li class="depth-1"><a href="#️-mineração-e-coleta" data-for="️-mineração-e-coleta">⛏️ Mineração e Coleta</a></li><li class="depth-1"><a href="#-encantamentos-custom-53" data-for="-encantamentos-custom-53">✨ Encantamentos Custom (53)</a></li><li class="depth-2"><a href="#️-mineração-e-ferramentas" data-for="️-mineração-e-ferramentas">⛏️ Mineração e Ferramentas</a></li><li class="depth-2"><a href="#️-armas-corpo-a-corpo" data-for="️-armas-corpo-a-corpo">⚔️ Armas Corpo a Corpo</a></li><li class="depth-2"><a href="#-arco-e-distância" data-for="-arco-e-distância">🏹 Arco e Distância</a></li><li class="depth-2"><a href="#️-armadura-e-defesa" data-for="️-armadura-e-defesa">🛡️ Armadura e Defesa</a></li><li class="depth-2"><a href="#-movimento-e-utilidade" data-for="-movimento-e-utilidade">🏃 Movimento e Utilidade</a></li><li class="depth-2"><a href="#-tridente" data-for="-tridente">🔱 Tridente</a></li><li class="depth-2"><a href="#-maldições" data-for="-maldições">💀 Maldições</a></li><li class="depth-1"><a href="#-habilidades-rpg-auraskills" data-for="-habilidades-rpg-auraskills">🎮 Habilidades RPG (AuraSkills)</a></li><li class="depth-1"><a href="#-cervejaria-breweryx" data-for="-cervejaria-breweryx">🍺 Cervejaria (BreweryX)</a></li><li class="depth-2"><a href="#como-fazer" data-for="como-fazer">Como Fazer</a></li><li class="depth-2"><a href="#receitas" data-for="receitas">Receitas</a></li><li class="depth-2"><a href="#efeitos-da-bebedeira" data-for="efeitos-da-bebedeira">Efeitos da Bebedeira</a></li><li class="depth-1"><a href="#-personalização" data-for="-personalização">🎨 Personalização</a></li><li class="depth-1"><a href="#-lojas" data-for="-lojas">🏪 Lojas</a></li><li class="depth-2"><a href="#criar-sua-loja-quickshop" data-for="criar-sua-loja-quickshop">Criar sua Loja (QuickShop)</a></li><li class="depth-1"><a href="#-datapacks-e-crafting-tweaks" data-for="-datapacks-e-crafting-tweaks">📦 Datapacks e Crafting Tweaks</a></li><li class="depth-1"><a href="#-roleplay-e-loop-de-jogo" data-for="-roleplay-e-loop-de-jogo">🎭 Roleplay e Loop de Jogo</a></li><li class="depth-2"><a href="#o-conceito" data-for="o-conceito">O Conceito</a></li><li class="depth-2"><a href="#o-loop-do-jogador" data-for="o-loop-do-jogador">O Loop do Jogador</a></li><li class="depth-2"><a href="#cargos-e-profissões" data-for="cargos-e-profissões">Cargos e Profissões</a></li><li class="depth-1"><a href="#-informações-técnicas" data-for="-informações-técnicas">📊 Informações Técnicas</a></li><li class="depth-2"><a href="#plugins-instalados-24" data-for="plugins-instalados-24">Plugins Instalados (24)</a></li><li class="depth-1"><a href="#️-modpack-client-side-opcional" data-for="️-modpack-client-side-opcional">🖥️ Modpack Client-Side (Opcional)</a></li><li class="depth-1"><a href="#-documentação-completa" data-for="-documentação-completa">📚 Documentação Completa</a></li><li class="depth-1"><a href="#-regras" data-for="-regras">📋 Regras</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../" class="internal">Haven SMP</a></li><li><a href="../minecraft-smp/auraskills" class="internal">auraskills</a></li><li><a href="../minecraft-smp/brewery" class="internal">brewery</a></li><li><a href="../minecraft-smp/economy" class="internal">economy</a></li><li><a href="../minecraft-smp/enchantments" class="internal">enchantments</a></li><li><a href="../minecraft-smp/" class="internal">Haven SMP — Guias</a></li><li><a href="../minecraft-smp/litematica" class="internal">litematica</a></li><li><a href="../minecraft-smp/shops" class="internal">shops</a></li><li><a href="../minecraft-smp/worth" class="internal">worth</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Criado com <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/VictorLopes3101/haven-smp">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
